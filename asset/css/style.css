@@ -10,6 +10,14 @@
     background-color: rgba(122, 211, 255, 0.647);
 }
 
+:root {
+    --ds-light: #f6f6f6;
+    --ds-white: #ffffff;
+    --ds-blackfooter: #23272a;
+
+}
+
+--bg-grey: f6f6f6
 /* #endregion common */
 
 
@@ -23,6 +31,7 @@
 }
 
 #flex-menu {
+    margin: auto;
     width: 80%;
     display: flex;
     padding: 1rem 0;
@@ -30,14 +39,16 @@
 
 
 .flex-nav {
-    flex-grow: 3;
+    flex-grow: 2;
+    max-width: 50%;
     display: flex;
     flex-wrap: wrap;
     align-content: center;
     justify-content: space-around;
 }
 
-.logo {
+#flex-menu .logo {
+    max-width: 25%;
     display: flex;
     flex-grow: 1;
     flex-wrap: wrap;
@@ -46,11 +57,20 @@
 }
 
 .login {
+    max-width: 25%;
     display: flex;
     flex-grow: 1;
     flex-wrap: wrap;
     align-content: center;
     justify-content: flex-end;
+}
+
+.menu {
+    padding: 2rem;
+}
+
+.flex-nav {
+    padding: 2rem 4rem;
 }
 
 .jumbotron {
@@ -78,64 +98,74 @@
 }
 
 .debug .header-top {
-    /* background-color: aqua; */
-}
-
-/* .debug .header-bottom{
-    background-color: rgb(0, 150, 150);
-    height: 100%;
-} */
-
-.debug .logo {
-    height: 3rem;
+    background-color: aqua;
 }
 
 .debug #flex-text {
-    height: 300px;
-    width: 600px;
+    height: 400px;
+    width: 35%;
     background-color: blueviolet;
     border: 1px dashed black;
 }
 
 /* main debug */
 
-.debug .bg .debug .party-1 {
-    height: 500px;
-    background-color: yellow;
-}
-
-
-
-.debug #bg-party-1 {
-    background-color: rgb(255, 255, 255);
-}
-
-.container-party {
+.debug .container-party {
     border: 1px dashed black;
 }
 
-.debug .img-party-1,
-.img-party-2,
-.img-party-3 {
+.debug .img-party {
     height: 400px;
     background-color: rgb(135, 135, 255);
     width: 60%;
 }
 
-.debug .detail-party-1,
-.detail-party-2,
-.detail-party-3 {
+.debug .detail-party {
     background: aliceblue;
     border: 1px dashed black;
-    height: 400px;
+    height: 500px;
+}
+
+.debug .detail-big {
+    background: aliceblue;
+    border: 1px dashed black;
+    height: 700px;
+}
+
+.debug .container-party {
+    background-color: rgb(135, 135, 255);
+
+}
+
+.debug .col {
+    height: 500px;
+    background-color: rgb(255, 213, 161);
+    border: 1px dashed rgb(255, 255, 255);
+
+}
+
+.debug .flex-bottom {
+    height: 40px;
+    background-color: antiquewhite;
+}
+.debug .flex-bottom .logo {
+    border: 1px dashed rgb(255, 255, 255);
+    height: 20px;
 }
 
 /* #endregion debug */
 
 /* #region main */
-#bg-party-1,
-#bg-party-2,
-#bg-party-3 {
+.back-grey {
+    background-color: var(--ds-light)
+}
+
+.back-white {
+    background-color: var(--ds-white)
+}
+
+.back-grey,
+.back-white {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -148,20 +178,54 @@
     margin: 2rem;
 }
 
-.detail-party-1,
-.detail-party-2,
-.detail-party-3 {
+.container-big {
+    width: 80%;
+    display: flex;
+    margin: 2rem;
+}
+
+.detail-party {
     width: 40%;
 }
 
-.img-party-1,
-.img-party-2,
-.img-party-3 {
+.detail-big {
+    width: 100%;
+}
+
+.img-party {
     width: 60%;
 }
 
-.bg-party-2 .img-party-2 {
-    order: 1;
+.back-grey .img-party {
+    order: 2;
 }
 
 /* #endregion main */
+
+#app-footer {
+    background-color: var(--ds-blackfooter);
+}
+
+.flex-top {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    padding: 3rem 0;
+}
+
+.col.big {
+    flex-grow: 2;
+}
+
+.col {
+    flex-grow: 1;
+}
+
+.flex-bottom{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: wrap;
+}
