@@ -6,8 +6,8 @@
     box-sizing: border-box;
 }
 
-.m70 {
-    width: 70%;
+.bg-start-page {
+    background-color: blue;
 }
 
 /* #endregion common */
@@ -23,7 +23,7 @@
 }
 
 #flex-menu {
-    width: 70%;
+    width: 80%;
     display: flex;
     padding: 1rem 0;
 }
@@ -53,7 +53,7 @@
     justify-content: flex-end;
 }
 
-.header-bottom {
+.jumbotron {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -61,7 +61,7 @@
     align-content: center;
 }
 
-#flex-text {
+.jumbotron #flex-text {
     display: flex;
     margin: 2rem;
 }
@@ -71,10 +71,6 @@
 
 /* #region debug */
 
-.debug #app-header {
-    background-color: blue;
-    display: block;
-}
 
 .debug .menu {
     background-color: yellow;
@@ -103,17 +99,15 @@
 
 /* main debug */
 
-.debug .bg
-
-.debug .party-1 {
+.debug .bg .debug .party-1 {
     height: 500px;
     background-color: yellow;
 }
 
 
 .debug .img-party-1 {
-    height: 100%;
-    background: aqua;
+    height: 400px;
+    background-color: rgb(135, 135, 255);
     width: 60%;
 }
 
@@ -121,17 +115,27 @@
 /* #endregion debug */
 
 /* #region main */
+.detail-party-1 {
+    background: aliceblue;
+    height: 400px;
+    width: 40%;
+}
 
 #bg-party-1 {
     display: flex;
-    background-color: gray;
-    height: 800px;
+    background-color: rgba(141, 105, 105, 0.666);
     justify-content: center;
     flex-wrap: wrap;
     align-content: center;
 }
 
+.party-1 {
+    display: flex;
+    margin: 2rem;
+}
 
-
+.container-party {
+    max-width: 80%;
+}
 
 /* #endregion main */
