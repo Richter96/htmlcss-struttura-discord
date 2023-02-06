@@ -7,7 +7,7 @@
 }
 
 .bg-start-page {
-    background-color: blue;
+    background-color: rgba(122, 211, 255, 0.647);
 }
 
 /* #endregion common */
@@ -105,37 +105,63 @@
 }
 
 
-.debug .img-party-1 {
+
+.debug #bg-party-1 {
+    background-color: rgb(255, 255, 255);
+}
+
+.container-party {
+    border: 1px dashed black;
+}
+
+.debug .img-party-1,
+.img-party-2,
+.img-party-3 {
     height: 400px;
     background-color: rgb(135, 135, 255);
     width: 60%;
 }
 
+.debug .detail-party-1,
+.detail-party-2,
+.detail-party-3 {
+    background: aliceblue;
+    border: 1px dashed black;
+    height: 400px;
+}
 
 /* #endregion debug */
 
 /* #region main */
-.detail-party-1 {
-    background: aliceblue;
-    height: 400px;
-    width: 40%;
-}
-
-#bg-party-1 {
+#bg-party-1,
+#bg-party-2,
+#bg-party-3 {
     display: flex;
-    background-color: rgba(141, 105, 105, 0.666);
     justify-content: center;
     flex-wrap: wrap;
     align-content: center;
 }
 
-.party-1 {
+.container-party {
+    width: 80%;
     display: flex;
     margin: 2rem;
 }
 
-.container-party {
-    max-width: 80%;
+.detail-party-1,
+.detail-party-2,
+.detail-party-3 {
+    width: 40%;
+}
+
+.img-party-1,
+.img-party-2,
+.img-party-3 {
+    width: 60%;
+}
+
+.bg-party-2 .img-party-2 {
+    order: 1;
 }
 
 /* #endregion main */
