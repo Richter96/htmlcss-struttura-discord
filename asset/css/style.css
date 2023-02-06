@@ -1,8 +1,73 @@
-*{
+/* #region common */
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+.m70 {
+    width: 70%;
+}
+
+/* #endregion common */
+
+
+/* #region header  */
+
+
+.header-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#flex-menu {
+    width: 70%;
+    display: flex;
+    padding: 1rem 0;
+}
+
+
+.flex-nav {
+    flex-grow: 3;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+}
+
+.logo {
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-start;
+}
+
+.login {
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-end;
+}
+
+.header-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+}
+
+#flex-text {
+    display: flex;
+    margin: 2rem;
+}
+
+/* #endregion header  */
+
 
 /* #region debug */
 
@@ -29,65 +94,44 @@
     height: 3rem;
 }
 
-
-.debug #flex-text   {
+.debug #flex-text {
     height: 300px;
     width: 600px;
     background-color: blueviolet;
     border: 1px dashed black;
 }
+
+/* main debug */
+
+.debug .bg
+
+.debug .party-1 {
+    height: 500px;
+    background-color: yellow;
+}
+
+
+.debug .img-party-1 {
+    height: 100%;
+    background: aqua;
+    width: 60%;
+}
+
+
 /* #endregion debug */
 
+/* #region main */
 
-.m70 {
-    width: 70%;
-}
-
-.header-top {
+#bg-party-1 {
     display: flex;
-    flex-wrap: wrap;
+    background-color: gray;
+    height: 800px;
     justify-content: center;
-}
-
-
-#flex-menu {
-    width: 70%;
-    display: flex;
-    padding: 1rem 0;
-}
-
-.header-bottom {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    flex-direction: column;
-    align-content: center;
-}
-
-#flex-text {
-    display: flex;
-    margin: 2rem;
-}
-
-.flex-nav {
-    flex-grow: 3;
-    display: flex;
     flex-wrap: wrap;
     align-content: center;
-    justify-content: space-around;
-}
-.logo {
-    display: flex;
-    flex-grow: 1;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: flex-start;
-}
-.login {
-    display: flex;
-    flex-grow: 1;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: flex-end;
 }
 
+
+
+
+/* #endregion main */
