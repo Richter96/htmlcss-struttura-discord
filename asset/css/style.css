@@ -203,6 +203,7 @@
 
 #app-footer {
     background-color: var(--ds-blackfooter);
+    padding-bottom: 3rem;
 }
 
 .flex-top {
