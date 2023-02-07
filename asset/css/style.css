@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 
-.container-head {
+.wallpaper {
     background-color: rgba(122, 211, 255, 0.647);
 }
 
@@ -17,17 +17,16 @@
     --bg-grey: #f6f6f6;
 
 }
+
+.container {
+    width: 80%;
+    max-width: 1170px;
+    margin: auto;
+}
+
 /* #endregion common */
 
-
 /* #region header  */
-bg-start-page
-
-.header-top {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
 
 #flex-menu {
     margin: auto;
@@ -37,15 +36,6 @@ bg-start-page
 }
 
 
-.flex-nav {
-    flex-grow: 2;
-    max-width: 50%;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: space-around;
-}
-
 #flex-menu .logo {
     max-width: 25%;
     display: flex;
@@ -53,24 +43,29 @@ bg-start-page
     flex-wrap: wrap;
     align-content: center;
     justify-content: flex-start;
+    padding-left: 2rem;
 }
 
-.login {
+#flex-menu .login {
     max-width: 25%;
     display: flex;
     flex-grow: 1;
     flex-wrap: wrap;
     align-content: center;
     justify-content: flex-end;
-}
-
-.menu {
-    padding: 2rem;
+    padding-right: 2rem;
 }
 
 .flex-nav {
-    padding: 2rem 4rem;
+    flex-grow: 2;
+    max-width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    padding: 1rem 4rem;
 }
+
 
 .jumbotron {
     display: flex;
@@ -91,12 +86,14 @@ bg-start-page
 /* #region debug */
 
 
-.debug .menu {
+.debug .logo,
+.flex-nav,
+.login {
     background-color: yellow;
     border: 1px dashed black;
 }
 
-.debug .header-top {
+.debug .flex-menu{
     background-color: aqua;
 }
 
@@ -147,6 +144,7 @@ bg-start-page
     height: 40px;
     background-color: antiquewhite;
 }
+
 .debug .flex-bottom .logo {
     border: 1px dashed rgb(255, 255, 255);
     height: 20px;
@@ -203,7 +201,7 @@ bg-start-page
 
 #app-footer {
     background-color: var(--ds-blackfooter);
-    padding-bottom: rem;
+    padding-bottom: 2rem;
 }
 
 .flex-top {
@@ -221,7 +219,7 @@ bg-start-page
     flex-grow: 1;
 }
 
-.flex-bottom{
+.flex-bottom {
     display: flex;
     width: 80%;
     margin: auto;
