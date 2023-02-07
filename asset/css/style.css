@@ -29,8 +29,6 @@
 /* #region header  */
 
 #flex-menu {
-    margin: auto;
-    width: 80%;
     display: flex;
     padding: 1rem 0;
 }
