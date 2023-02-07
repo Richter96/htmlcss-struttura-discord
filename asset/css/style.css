@@ -130,7 +130,7 @@
     border: 1px dashed black;
 }
 
-.debug .col {
+.debug .col, .col-big {
     height: 500px;
     background-color: rgb(255, 213, 161);
     border: 1px dashed rgb(255, 255, 255);
@@ -205,7 +205,7 @@
     padding: 3rem 0;
 }
 
-.col.big {
+.col-big {
     flex-grow: 2;
 }
 
