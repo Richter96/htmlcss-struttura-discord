@@ -87,8 +87,8 @@
 
 
 .debug .logo,
-.flex-nav,
-.login {
+.debug .flex-nav,
+.debug .login {
     background-color: yellow;
     border: 1px dashed black;
 }
@@ -106,31 +106,30 @@
 
 /* main debug */
 
-.debug .container-party {
+
+
+
+.debug .detail-party {
+    background: aliceblue;
     border: 1px dashed black;
+    height: 100%;
 }
 
 .debug .img-party {
     height: 400px;
     background-color: rgb(135, 135, 255);
+    border: 1px dashed black;
     width: 60%;
 }
-
-.debug .detail-party {
-    background: aliceblue;
-    border: 1px dashed black;
-    height: 500px;
-}
-
 .debug .detail-big {
     background: aliceblue;
     border: 1px dashed black;
     height: 700px;
 }
 
-.debug .container-party {
-    background-color: rgb(135, 135, 255);
-
+.debug .party {
+    background-color: rgb(6, 6, 133);
+    border: 1px dashed black;
 }
 
 .debug .col {
@@ -169,8 +168,7 @@
     align-content: center;
 }
 
-.container-party {
-    width: 80%;
+.party {
     display: flex;
     margin: 2rem;
 }
