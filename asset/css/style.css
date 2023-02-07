@@ -84,7 +84,7 @@
 /* #region debug */
 
 
-.debug .logo,
+.debug #flex-menu .logo,
 .debug .flex-nav,
 .debug .login {
     background-color: yellow;
@@ -193,6 +193,8 @@
 
 /* #endregion main */
 
+/* #region footer */
+
 #app-footer {
     background-color: var(--ds-blackfooter);
     padding-bottom: 2rem;
@@ -221,3 +223,5 @@
     align-content: center;
     flex-wrap: wrap;
 }
+
+/* #endregion footer */
